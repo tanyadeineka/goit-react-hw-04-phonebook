@@ -5,7 +5,13 @@ export const Filter = ({ filter, handleChange }) => {
     return (
         <div className={css.filterContainer}>
             <label className={css.labelFilter}>Find contacts by name</label>
-            <input className={css.inputFilter} type="text" name="filter" value={filter} onChange={handleChange} />
+            <input
+                className={css.inputFilter}
+                type="text"
+                name="filter"
+                value={filter}
+                onChange={handleChange}
+            />
         </div>
     )
 }
